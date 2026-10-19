@@ -10,7 +10,9 @@ set(OpenCV_DIR "C:/ProgramData/opencv/build")
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(Boliche_inteligente main.cpp)
+add_executable(Boliche_inteligente main.cpp
+        deteccion_IA.cpp
+        deteccion_IA.h)
 
 # Enlazamos automáticamente todas las librerías
 target_link_libraries(Boliche_inteligente ${OpenCV_LIBS})
